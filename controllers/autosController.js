@@ -42,7 +42,6 @@ module.exports = {
             let autosColor = autosMarca.filter(function(auto){
                 return auto.color == dato
             })
-            console.log(autosColor)
             if(autosColor[0] == undefined){
                 return res.render("errorSucursal", {title: "Error", mensaje: "No encontramos ningún auto del color solicitado. Por favor, ingrese un color diferente" })
             }else{
